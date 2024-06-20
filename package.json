@@ -1,5 +1,5 @@
 {
-  "name": "ethcall",
+  "name": "@curvefi/ethcall",
   "version": "6.0.6",
   "description": "ethers.js-compatible wrapper around Multicall",
   "author": "Timur Badretdinov <destinerx@gmail.com>",
@@ -10,7 +10,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Destiner/ethcall.git"
+    "url": "https://github.com/curvefi/ethcall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/curvefi/ethcall/issues"
   },
   "type": "module",
   "main": "dist/index.js",
