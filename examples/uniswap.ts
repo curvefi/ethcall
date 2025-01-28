@@ -2,7 +2,7 @@ import { getDefaultProvider } from 'ethers';
 
 import { Contract, Provider } from '../src/index.js';
 
-import pairAbi from './abi/uniswapV2Pair.json' assert { type: 'json' };
+import pairAbi from './abi/uniswapV2Pair.json' with { type: 'json' };
 
 async function run(): Promise<void> {
   const provider = getDefaultProvider('mainnet');
