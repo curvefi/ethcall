@@ -123,7 +123,7 @@ async function tryAll<T>(
         const params = Abi.decode(name, outputs, result.returnData);
         const data = outputs.length === 1 ? params[0] : params;
         callResult.push(data);
-      } catch (e) {
+      } catch {
         // Failed to decode the data: most likely calling non-existing contract
         callResult.push(null);
       }
@@ -173,7 +173,7 @@ async function tryEach<T>(
         const params = Abi.decode(name, outputs, result.returnData);
         const data = outputs.length === 1 ? params[0] : params;
         callResult.push(data);
-      } catch (e) {
+      } catch {
         // Failed to decode the data: most likely calling non-existing contract
         callResult.push(null);
       }
