@@ -38,12 +38,16 @@ jobs:
 
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v4
-      - name: Setup .npmrc file to publish to npm
+      - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: '22'
+          cache: npm
       - name: Install modules
         run: npm ci
       - name: Build
