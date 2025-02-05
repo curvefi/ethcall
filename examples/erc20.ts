@@ -2,7 +2,7 @@ import { getDefaultProvider } from 'ethers';
 
 import { Contract, Provider } from '../src/index.js';
 
-import erc20Abi from './abi/erc20.json' assert { type: 'json' };
+import erc20Abi from './abi/erc20.json' with { type: 'json' };
 
 async function run(): Promise<void> {
   const provider = getDefaultProvider('mainnet');

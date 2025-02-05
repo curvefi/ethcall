@@ -2,7 +2,7 @@ import { getDefaultProvider } from 'ethers';
 
 import { Contract, Provider } from '../src/index.js';
 
-import poolAbi from './abi/aaveV2Pool.json' assert { type: 'json' };
+import poolAbi from './abi/aaveV2Pool.json' with { type: 'json' };
 
 async function run(): Promise<void> {
   const provider = getDefaultProvider('mainnet');
