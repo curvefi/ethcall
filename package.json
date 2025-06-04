@@ -1,6 +1,6 @@
 {
   "name": "@curvefi/ethcall",
-  "version": "6.0.13",
+  "version": "6.0.14",
   "description": "ethers.js-compatible wrapper around Multicall",
   "author": "Timur Badretdinov <destinerx@gmail.com>",
   "keywords": [
