@@ -399,6 +399,10 @@ function getMulticall3(chainId: number): Multicall | null {
       address,
       block: 11269,
     },
+    5042002: {
+      address,
+      block: 35140602,
+    },
   };
   const chainAddressMap = addressMap[chainId];
   if (!chainAddressMap) {
